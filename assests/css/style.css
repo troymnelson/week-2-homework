@@ -1,3 +1,5 @@
+/* resets */
+
 * {
     padding: 0;
     margin: 0;
@@ -8,6 +10,9 @@ body, html {
     height: 100%;
 }
 
+
+/* displays nav bar elements side by side and adds a background color to them */
+
 header.main-header {
     display: flex;
     align-items: center;
@@ -16,17 +21,20 @@ header.main-header {
 }
 
 
+/* gets rid of bullet points in nav bar and displays list items side by side */
 header.main-header nav ul {
     display: flex;
     list-style-type: none;
 }
 
+/* centers nav bar items slightly left of right side of screen */
 header.main-header nav ul li a {
     margin: 0 20px;
     text-decoration: none;
     color: black;
 }
 
+/* two main section elements displayed side by side with a background behind them */
 main.my-main {
     display: flex;
     height: 100%;
@@ -34,13 +42,14 @@ main.my-main {
     color: white;
 }
 
+/* side section for main element, adds margin to show the background color of the parent element, also adds a background color to this element */
 main section#aside {
     background: blueviolet;
     margin: 10px;
     flex: 1;
 }
 
-
+/* main section for main element, adds margin to show background of parent element */
 main section#content-main {
     display: flex;
     flex-direction: column;
@@ -51,19 +60,18 @@ main section#content-main {
 
 }
 
+/* aligns text in the main  */
 main section#content-main p {
     text-align: center;
 }
 
-.center {
-    justify-content: center;
-}
-
+/* gives a border and height to the articles inside of sections inside mains */
 main section article {
     border: 1px solid black;
-    height: 50%;
+    height: 40%;
 }
 
+/* displays the elments in a column at the center of the footer */
 footer.main-footer {
     display: flex;
     flex-direction: column;
